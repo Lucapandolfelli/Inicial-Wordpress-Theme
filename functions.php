@@ -9,6 +9,7 @@
 
     function theme_support(){
         add_theme_support('title-tag');
+        add_theme_support('html5', array('search-form'));
     }
     add_action('after_setup_theme', 'theme_support');
 
@@ -39,6 +40,23 @@
         );
     }
     add_action( 'init', 'register_menus' );
+
+    // Register Widgets
+        
+    function widgets_setup() {
+
+        register_sidebar(array(
+            'name'          => 'Sidebar',
+            'id'            => 'sidebar-1',
+            'description'   => 'Sidebar of the search page',
+            'class'         => '',
+            'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</aside>',
+            'before_title'  => '<h2 class="widget-title">',
+            'after_title'   => '</h2>' 
+        ));
+    }
+    add_action( 'widgets_init', 'widgets_setup' );
 
 
 ?>

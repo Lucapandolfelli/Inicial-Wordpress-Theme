@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs 12" style="text-align: justify;"> 
+                <div class="col-xs-12" style="text-align: justify;"> 
                     <small>Posted on: <?php the_time('F j, Y'); ?> in <?php the_category(' / '); ?></small>
                     <p><?php the_content(); ?></p>
                 </div>

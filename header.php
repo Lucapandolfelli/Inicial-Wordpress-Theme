@@ -30,6 +30,10 @@
                 ) );
             ?>
 
+            <div class="ms-3">
+                <?php get_search_form(); ?>
+            </div>
+
         </div>
     </nav>
     
