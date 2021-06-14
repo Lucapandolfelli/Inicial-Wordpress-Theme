@@ -1,4 +1,4 @@
-<div class="card my-3">
+<div class="card my-3 p-2">
     <div class="card-body">
         <h3 class="card-title"><?php the_title(); ?></h3>
         <small>Posted on: <?php the_time('F j, Y'); ?> in <?php the_category(' / '); ?></small>

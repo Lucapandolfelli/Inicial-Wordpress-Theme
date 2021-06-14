@@ -24,7 +24,7 @@
         <div class="container px-5 my-4">
             <div class="row">
                 <div class="col-xs-12"> 
-                    <h1>Search Result</h1>
+                    <h1>Search Results</h1>
                     <hr>
                 </div>
             </div>
