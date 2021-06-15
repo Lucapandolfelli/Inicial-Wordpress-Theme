@@ -1,5 +1,5 @@
-<footer style="background: #222222; height: 80px;">
-    <div class="container px-5 my-4">
+<footer class="footer" style="background: #222222;">
+    <div class="container px-5">
         <div class="row">
             <div class="col-sm-12">
                 <h3 class="text-white">Footer</h3>

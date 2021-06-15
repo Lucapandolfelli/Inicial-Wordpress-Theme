@@ -18,15 +18,10 @@
         </div>
     <?php else: ?>
         <div class="container px-5 my-4">
-            <div class="row">
-                <div class="col-xs-12"> 
-                    <h1>Search Results for '<?php echo get_search_query(); ?>'</h1>
-                    <hr>
-                </div>
-            </div>
+            <?php get_template_part('/template-parts/content', 'title'); ?>
             <div class="row">
                 <div class="col-xs-12 col-sm-9 d-flex justify-content-center align-items-center"> 
-                    <h1 class="text-center text-uppercase">No result</h1>
+                    <h2 class="text-center">There are no results for '<?php echo get_search_query(); ?>'</h2>
                 </div>
                 <div class="col-xs-12 col-sm-3">
                     <?php get_sidebar(); ?>

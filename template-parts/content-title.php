@@ -3,7 +3,7 @@
         <?php if(is_archive()): ?>
             <h1><?php the_archive_title(); ?></h1>
         <?php elseif(is_search()): ?>
-            <h1>Search Result for '<?php echo get_search_query(); ?>'</h1>
+            <h1>Search Results for '<?php echo get_search_query(); ?>'</h1>
         <?php elseif(is_page()): ?>
             <h1><?php the_title(); ?></h1>
         <?php elseif(is_home() || is_front_page()): ?>
