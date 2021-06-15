@@ -3,19 +3,18 @@
 <main class="main-content">
     <?php if(have_posts()): ?>
         <div class="container px-5 my-4">
+            <?php get_template_part('/template-parts/content', 'title'); ?>
             <div class="row">
-                <div class="col-xs-12"> 
-                    <h1><?php the_archive_title(); ?></h1>
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12"> 
+                <div class="col-xs-12 col-sm-9"> 
                     <?php while(have_posts()): the_post(); ?>
                         <?php get_template_part('template-parts/content', 'archive'); ?>
                     <?php endwhile; ?>
                 </div>
+                <div class="col-xs-12 col-sm-3">
+                    <?php get_sidebar(); ?>
+                </div>
             </div>
+            <?php get_template_part('/template-parts/content', 'pagination'); ?>
         </div>
     <?php endif; ?>
 </main>

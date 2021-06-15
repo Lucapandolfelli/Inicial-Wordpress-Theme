@@ -3,12 +3,7 @@
 <main class="main-content">
     <?php if(have_posts()): ?>
         <div class="container px-5 my-4">
-            <div class="row">
-                <div class="col-xs-12"> 
-                    <h1>Search Result</h1>
-                    <hr>
-                </div>
-            </div>
+            <?php get_template_part('/template-parts/content', 'title'); ?>
             <div class="row">
                 <div class="col-xs-12 col-sm-9"> 
                     <?php while(have_posts()): the_post(); ?>
@@ -19,12 +14,13 @@
                     <?php get_sidebar(); ?>
                 </div>
             </div>
+            <?php get_template_part('/template-parts/content', 'pagination'); ?>
         </div>
     <?php else: ?>
         <div class="container px-5 my-4">
             <div class="row">
                 <div class="col-xs-12"> 
-                    <h1>Search Results</h1>
+                    <h1>Search Results for '<?php echo get_search_query(); ?>'</h1>
                     <hr>
                 </div>
             </div>
